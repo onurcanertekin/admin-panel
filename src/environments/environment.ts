@@ -2,8 +2,18 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { Api } from "src/app/shared/core/dto/general.dto";
+
 export const environment = {
-  production: false
+  production: false,
+  loginPath: '/giris',
+  isRequesting: false,
+  isLoading:false,
+  api: <Api>{
+    endpoint: 'http://localhost:####/api',
+    token: `${name}-dashboard`,
+    contentRootPath: 'http://localhost:####/api/docs/',
+  },
 };
 
 /*
